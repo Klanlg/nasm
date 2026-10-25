@@ -33,9 +33,9 @@ jobs:
     - name: checkout
       uses: actions/checkout@v4
     - name: Enable Developer Command Prompt
-      uses: ilammy/msvc-dev-cmd@v1
+      uses: step-security/msvc-dev-cmd@v1
       with:
-        arch: amd64
+        arch: x64
     - name: build
       run: |
         nmake /f Mkfiles\msvc.mak all
