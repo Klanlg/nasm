@@ -35,7 +35,6 @@ jobs:
     - name: Enable Developer Command Prompt
       uses: ilammy/msvc-dev-cmd@v1
       with:
-        vsversion: ${{matrix.comp.id}}
         arch: amd64
     - name: build
       run: |
